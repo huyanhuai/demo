@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#dabox{
+			width: 100%;
+			height: 100%;
+		}
+		/*top*/
+			#top{
+				width: 1350px;
+				height: 40px;
+				background-color: #333333;
+				position: absolute;
+				top: 0;
+			}
+			#top .meishi{
+				width: 70px;
+                height: 40px;
+                line-height: 40px;
+                list-style: none;
+                float: left;
+                text-align: center;
+			}
+			#top .meishi a{
+				font-size: 14px;
+                color: #ccc;
+                text-decoration: none;
+			}
+			#top .meishi:hover{
+				background-color: black;
+			}
+			#top .meishi a:hover{
+				color: white;
+			}
+			#top .kongbai{
+				width: 415px;
+				height: 40px;
+				list-style: none;
+				float: left;
+			}
+			#top .menu1{
+				width: 48px;
+                height: 40px;
+                line-height: 40px;
+                list-style: none;
+                float: left;
+                text-align: center;
+                background-color: #333333;
+			}
+			#top .menu1 a{
+				font-size: 14px;
+                color: #ccc;
+                text-decoration: none;
+			}
+			#top .menu1:hover{
+				background-color: black;
+			}
+			#top .menu1 a:hover{
+				color: white;
+			}
+			#top .menu2{
+				display: none;
+				width: 48px;
+                height: 40px;
+                line-height: 40px;
+                list-style: none;
+                float: left;
+                text-align: center;
+                background-color: #333333;
+			}
+			#top .menu2 a{
+				font-size: 14px;
+                color: #ccc;
+                text-decoration: none;
+			}
+			#top .menu1:hover .menu2{
+				display: block;
+			}
+			#top .menu2:hover{
+				background-color: black;
+			}
+			#top .menu2 a:hover{
+				color: white;
+			}
+			#top .menu3{
+				width: 60px;
+                height: 40px;
+                line-height: 15px;
+                list-style: none;
+                float: left;
+                text-align: center;
+                background-color: #333333;
+            }
+            #top .menu3 a{
+				font-size: 10px;
+                color: #ccc;
+                text-decoration: none;
+			}
+			#top .xiaotu1{
+				width: 18px;
+				height: 18px;
+			}
+			#top .menu3 .menu3-1{
+				list-style: none;
+				background-color: #333333;
+				display: none;
+			}
+			#top .menu3:hover{
+				background-color: black;
+			}
+			#top .menu3 a:hover{
+				color: white;
+			}
+			#top .menu3:hover .menu3-1{
+				display: block;
+			}
+			.datu{
+				width: 1350px;
+                height: 800px;
+			}
+			#box{
+				width: 1350px;
+                height: 800px;
+			}
+			#xiaobox{
+				width: 530px;
+				height: 300px;
+				position: absolute;
+				margin: -630px 0 0 400px;
+			}
+			#xiaobox-1{
+				width: 530px;
+				height: 50px;
+                line-height: 50px;
+                text-align: center;
+                font-size: 20px;
+			}
+			#xiaobox-1 #Dzhuce{
+				color: #fff;
+                width: 50%;
+                float: left;
+                background: rgba(0,0,0,.6);
+			}
+			#xiaobox-1 #Dzhuce:hover{
+				color: #FF6767;
+				cursor: pointer;
+			}
+			#xiaobox-1 #Ddenglu{
+				color: #333333;
+                width: 50%;
+                float: left;
+                background: rgba(255,255,255,.8);
+			}
+			#xiaobox-1 #Ddenglu:hover{
+				color: #333333;
+				cursor: pointer;
+			}
+			#xiaobox-2{
+				background: rgba(255,255,255,.8);
+				width: 530px;
+				height: 250px;   
+			}
+			#xiaobox-2 .xiaobox-2-1{
+				float: left;
+                width: 300px;
+                height: 150px;
+                padding: 20px;
+                border-right: 1px solid #999;
+                margin: 20px 0 0;
+			}
+			#xiaobox-2 .xiaobox-2-1 ul{
+				display: block;
+                border: 1px solid #999;
+                border-radius: 4px;
+                width: 290px;
+                height: 33px;
+                list-style: none;
+                float: left;
+			}
+			#xiaobox-2 .xiaobox-2-1 ul label{
+				padding: 0 5px 0 10px;
+				line-height: 33px;
+			}
+			#xiaobox-2 .xiaobox-2-1 ul input{
+				width: 170px;
+                border: 0;
+                font-size: 14px;
+                background: rgba(0,0,0,0);
+                line-height: 30px;
+			}
+			#xiaobox-2 .xiaobox-2-1-1{
+				width: 290px;
+				height: 42px;
+				line-height: 42px;
+				
+			}
+			#xiaobox-2 .xiaobox-2-1-1 #xiaokuang{
+				width: 13px;
+				height: 13px;
+			}
+			#xiaobox-2 .xiaobox-2-1-1 #denglu{
+				width: 290px;
+				height: 40px;
+				font-size: 20px;
+				background-color: #FF6767;
+				color: white;
+				border-radius: 4px;
+				margin-top: 5px;
+			}
+			#xiaobox-2 .xiaobox-2-2{
+				width: 180px;
+				height: 200px;
+				float: left;
+				font-size: 14px;
+				text-align: center;
+				
+			}
+			.xiaotu2{
+				width: 110px;
+				height: 110px;
+				padding-top: 20px;
+				padding-bottom: 5px;
+			}
+			#xiaobox-2 .xiaobox-2-2 .xiaotu3{
+				width: 30px;
+				height: 30px;
+				padding-top: 8px;
+			}
+			#zhuce{
+				display: none;
+				width: 530px;
+				height: 185px;
+				background: rgba(255,255,255,.8);
+				font-size: 14px;
+				position: absolute;
+				left: 400px;
+				top: 223px;
+			}
+			#zhuce .zhuce-1{
+				float: left;
+                width: 300px;
+                height: 80px;
+                padding: 20px;
+                border-right: 1px solid #999;
+                margin: 20px 0 0;
+			}
+			#zhuce .zhuce-1-1{
+				float: left;
+                margin: 10px;
+			}
+			#zhuce .zhuce-1-1 .xiaotu4{
+				width: 30px;
+				height: 30px;
+				margin:10px 15px;
+			}
+			#zhuce .zhuce-1-2{
+				width: 300px;
+				height: 20px;
+			}
+			#zhuce .zhuce-2{
+				width: 190px;
+				height: 185px;
+				text-align: center;
+			}
+			#top .menu4{
+				width: 60px;
+                height: 40px;
+                line-height: 15px;
+                list-style: none;
+                float: left;
+                text-align: center;
+                background-color:#59C3D1;
+            }
+            #top .menu4 a{
+				font-size: 10px;
+                color:#F1F1F1;
+                text-decoration: none;
+			}
+			#top .menu4 a:hover{
+				color: white;
+			}
+			#top .menu4 .menu4-1 a:hover{
+				color: white;
+			}
+			#top .menu4 .menu4-1{
+				display: none;
+				width: 60px;
+                height: 40px;
+                line-height: 40px;
+                list-style: none;
+                float: left;
+                text-align: center;
+                background-color:#59C3D1;
+            }
+            #top .menu4 .menu4-1 a{
+				font-size: 10px;
+                color:#F1F1F1;
+                text-decoration: none;
+			}
+			#top .menu4:hover .menu4-1{
+				display: block;
+			}
+			#top .menu5{
+				width: 60px;
+                height: 40px;
+                line-height: 15px;
+                list-style: none;
+                float: left;
+                text-align: center;
+				background-color:#FFA859;
+			}
+			#top .menu5 a{
+				font-size: 10px;
+                color:#F1F1F1;
+                text-decoration: none;
+			}
+			#top .menu6{
+				width: 60px;
+                height: 40px;
+                line-height: 15px;
+                list-style: none;
+                float: left;
+                text-align: center;
+				background-color:#FE5761;
+			}
+			#top .menu6 a{
+				font-size: 10px;
+                color:#F1F1F1;
+                text-decoration: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="dabox">
+			<div id="dox">
+				
+			
+        <img class="datu" src="img/1.jpg"/></div>
+
+        
+		<div id="top">
+			<ul class="menu">
+				<li class="meishi"><a href="#">美食天下</a></li>
+				<li class="menu1"><a href="index.html">首页</a></li>
+				<li class="menu1"><a href="#">菜谱</a></li>
+				<li class="menu1"><a href="#">食材</a></li>
+				<li class="menu1"><a href="#">珍选</a></li>
+				<li class="menu1"><a href="#">健康</a></li>
+				<li class="menu1"><a href="#">专题</a></li>
+				<li class="menu1"><a href="#">社区</a></li>
+				<li class="menu1"><a href="#">话题</a></li>
+				<li class="menu1"><a href="#">活动</a></li>
+				<li class="menu1"><a href="#">搜索</a></li>
+				<li class="menu1"><a href="#">▼<ul>
+					<li class="menu2"><a href="#">烘焙</a></li>
+                    <li class="menu2"><a href="#">妈妈派</a></li></ul>
+				</a></li>
+				<li class="kongbai"></li>
+				<li class="menu1"><a href="#">注册</a></li>
+				<li class="menu1"><a href="#">登陆</a></li>
+				<li class="menu3"><a href="#">
+					<img class="xiaotu1" src="img/nir1.png"/><br />QQ登陆
+					<ul>
+					<li class="menu3-1"><a href="#">
+						<img class="xiaotu1" src="img/nir2.png"/><br />
+						微博登陆</a></li>
+                    <li class="menu3-1"><a href="#">
+                    	<img class="xiaotu1" src="img/nir3.png"/><br />
+                    	微信登陆</a></li></ul>
+				</a></li>
+				<li class="menu4" ><a href="#">
+					<img class="xiaotu1" src="img/nr1.png"/><br />发布
+					<ul>
+					<li class="menu4-1"><a href="#">发菜谱</a></li>
+					<li class="menu4-1"><a href="#">发话题</a></li>
+                    <li class="menu4-1"><a href="#">发日志</a></li></ul>
+				</a></li>
+				<li class="menu5"><a href="#">
+					<img class="xiaotu1" src="img/nr2.png"/><br />签到有礼
+				</a></li>
+				<li class="menu6"><a href="#">
+					<img class="xiaotu1" src="img/nr3.png"/><br />客户端
+				</a></li>
+			</ul>
+		</div>
+	    <div id="xiaobox">
+	    	<div id="xiaobox-1">
+	    		<a id="Dzhuce" >注册</a>
+	    		<a id="Ddenglu" >登陆</a>
+	    	</div>
+	    	<div id="xiaobox-2">
+	    		<div class="xiaobox-2-1">
+	    			<ul>
+	    				<li>
+	    					<label for="name">手机号/昵称:</label>
+	    					<input type="text" name="name" id="name" />
+	    				</li></ul>
+	    			<ul><li>
+	    					<label for="mima">密码:</label>
+	    					<input type="text" name="mima" id="mima" />
+	    				</li>
+	    			</ul>
+	    		<div class="xiaobox-2-1-1">
+	    			<p><input type="checkbox" id="xiaokuang" value="" />&nbsp;下次自动登录
+	    			&nbsp;&nbsp;&nbsp;&nbsp;<a href="">忘记密码？</a>
+	    			</p>
+	    			
+	    			<input type="submit" id="denglu" value="登陆" />
+	    		
+	    		</div>
+	    		</div>
+	    		<div class="xiaobox-2-2">
+	    			<img class="xiaotu2" src="img/msc_app.png"/>
+	    			<p>扫描二维码下载客户端</p>
+	    			<img class="xiaotu3" src="img/nir1.png"/>
+	    			<img class="xiaotu3" src="img/nir2.png"/>
+	    			<img class="xiaotu3" src="img/nir3.png"/>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div id="zhuce">
+	    	<div class="zhuce-1">
+	    		<p>欢迎使用第三方账号注册/登录美食天下</p>
+	    		<div class="zhuce-1-1">
+	    			<img class="xiaotu4" src="img/nir1.png"/>
+	    			<img class="xiaotu4" src="img/nir2.png"/>
+	    			<img class="xiaotu4" src="img/nir3.png"/>
+	    			<div class="zhuce-1-2">
+	    				<span style="width: 30px;margin:0 18px;float: left;">QQ</span>
+	    			    <span style="width: 30px;margin:0 18px;float: left;">微信</span>
+	    			    <span style="width: 30px;margin:0 18px;float: left;">微博</span>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="zhuce-2">
+	    		<img class="xiaotu2" src="img/msc_app.png"/>
+	    		<p>扫描二维码下载客户端</p>
+	    	</div>
+	    </div>
+	    </div>
+	    <script type="text/javascript">
+	    	var denglu=document.getElementById("xiaobox-2");
+	    	var zhuce=document.getElementById("zhuce");
+	    	var Dzhuce=document.getElementById("Dzhuce");
+	    	var Ddenglu=document.getElementById("Ddenglu");
+	    	var datu=document.getElementById("datu");
+	    	var x=1;
+	    	function qiehuan(){
+				x=x+1;
+				if(x==3){x=1;}
+				datu.src="img/"+x+".jpg";
+			}
+			setInterval(qiehuan,1000);
+	    	Dzhuce.onclick=function(){
+	    		zhuce.style.display="block";
+	    		denglu.style.display="none";
+	    		Dzhuce.style.cssText="color:#333333;background:rgba(255,255,255,.8);"
+	    		Ddenglu.style.cssText="color:#fff;background:rgba(0,0,0,.6);"
+	    	}
+	    	Ddenglu.onclick=function(){
+	    		denglu.style.display="block";
+	    		zhuce.style.display="none";
+	    		Ddenglu.style.cssText="color:#333333;background:rgba(255,255,255,.8);"
+	    		Dzhuce.style.cssText="color:#fff;background:rgba(0,0,0,.6);"
+	    	}
+	    	
+	    </script>
+	</body>
+</html>

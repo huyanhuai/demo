@@ -1,0 +1,841 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+				border: none;
+				
+			}
+			#dota{
+				width: 1600px;
+				height: 1970px;
+				background-color: #111111;
+			}
+			
+			#tou {
+				background: url(img/111_看图王.png);
+				width: 100%;
+				height: 1170px;
+				z-index: 1;
+				position: absolute;
+				margin: 0 auto;
+				text-align: center;
+				
+				}
+				#tou .tou1{
+				width: 500px;
+				float: left;
+				margin-left: 130px;
+				margin-top: 60px;
+			}
+			#tou .jx1{
+				width: 660px;
+				float: left;
+				margin-left: 25px;
+				margin-top: 108px;
+			}
+			#zuo1{
+				width: 130px;
+				height: 150px;
+				background-color: red;
+				margin-left: 338px;
+				margin-top: 230px;
+				background: url(img/cover170320_logo_01.png);
+				position: absolute;
+				z-index: 2;
+			}
+			#zuo1:hover{
+				background-position-y: -155px;
+				
+			}
+			#zi{
+				float: left;
+				margin-left: 140px;
+				margin-top: 30px;
+			}
+			
+			
+			.zi1{
+				width:160px;
+				height: 50px;
+				font-size: 19PX;
+				color: #C8C8C8;
+				float: left;
+				text-align: center;
+				list-style: none;
+				margin-top: 60px;
+				margin-left: -20px;
+				padding-left: 10px;
+				font-family: "宋体";
+				
+			}
+			.zi1 p{
+				font-family: "宋体";
+				font-size: 16px;
+				font-weight: 100;
+			}
+			#zi .zi1 a{
+				text-decoration: none;
+				color: #C8C8C8;
+			}
+			#zi .zi1 a:hover{
+				color: #FFD942;
+			}
+			/*剑心之忆*/
+			#jxzy{
+				width: 100%;
+				height: 500px;
+				/*background-color: red;*/
+				margin: 0 auto;
+				float: left;
+				margin-top: 35px;
+			}
+			#zuo{
+				width: 650px;
+				height: 500px;
+			/*	background-color: black;*/
+				margin-left: 60px;
+				float: left;
+			}
+			#zuo img{
+				margin-top: 130px;
+				margin-left: 2px;
+			}
+			
+			#you{
+				width: 800px;
+				height: 500px;
+				/*background-color: darkturquoise;*/
+				margin-left: 30px;
+				float: left;
+				
+			}
+			#you video{
+				
+				margin-left: -103px;
+				margin-top: -258px;
+				position: absolute;
+				left: 700px;
+				top: 60px;
+				z-index: 0;
+			}
+			#guanwang{
+				
+				width: 290px;
+				height: 21px;
+				
+				position: absolute;
+				z-index: 2;
+				margin-left: 218px;
+				margin-top: 597px;
+			}
+			#guanwang .guanwang{
+				color: white;
+				font-size: 17px;
+				font-family: "微软雅黑";
+				float: left;
+				margin: 10px;
+			}
+			#guanwang .guanwang a{
+				color: white;
+			}
+			#guanwang .guanwang a:hover{
+				color: #ADE55C;
+			}
+			#dac{
+				width:100%;
+				height: 430px;
+				
+				position: absolute;
+				z-index: 2;
+				margin-top: 780px;
+			}
+			#dac .dac1 {
+				float: left;
+				margin-left: 100px;
+				text-align: center;
+				font-family:  "微软雅黑";
+			font-weight: 400;
+			font-size: 25px;
+			color: #889495;
+			background: url(img/QQ_看图王.jpg);
+			}
+			.dac1 img{
+				margin-top: 43px;
+			}
+			#dac .dac1:hover{
+				animation: 1s shang;
+				margin-top: -30px;
+			}
+			@keyframes shang{
+				from{margin-top: 0px;}
+				to{margin-top: -30px;}
+			}
+			#dac .dac1:hover .hy1{
+				display: none;
+			}
+			.hy2{
+				display: none;
+			}
+			#dac .dac1:hover .hy2{
+				display: block;
+			}
+			.z1{
+				color: #CCCCCC;
+				height: 23px;
+				margin-top: 10px;
+			}
+			
+			
+			#juntuan{
+				width: 100%;
+				height:700px ;
+				float: left;
+				position: absolute;
+				margin-top: 30px;
+				z-index: 2;
+				margin-top: 1170px;
+				background: url(img/cover170320_bg_002.jpg);}
+				
+			#j1{
+				float: left;
+				position: absolute;
+				z-index: 2;
+				margin-left: 80px;
+				margin-top: 200px;
+			}
+			#bingnv{
+				float: left;
+				margin-left: 170px;
+				margin-top: -30px;
+				
+				
+			}
+			
+		#juntuan1{
+				float: left;
+				display: none;
+				margin-top: 0px;
+				
+				
+			}
+			#j2{
+				float: left;
+				position: absolute;
+				z-index: 2;
+				margin-left: 1050px;
+				margin-top: 200px;
+			}
+			
+		
+			#j1 :hover{
+				animation: 1s shang1;
+				margin-top: -30px;
+				
+			}
+			@keyframes shang1{
+				from{margin-top: 0px;}
+				to{margin-top: -30px;}
+			}
+			#j2 :hover{
+				animation: 1s shang2;
+				margin-top: -30px;
+			}
+			@keyframes shang2{
+				from{margin-top: 0px;}
+				to{margin-top: -30px;}
+			}
+		     #bn{
+				animation: 0.5s linear zuo;
+				
+			}
+			@keyframes zuo{
+				0%{margin-left: -50px;
+				opacity: 0.3;}
+				
+			}
+			#jt{
+				animation: 0.5s linear you;
+				
+			}
+			@keyframes you{
+				0%{margin-left: 50px;
+				opacity: 0.3;}
+				
+			}
+			
+			
+			
+			
+			
+			   #dibu{
+		    	height: 100px;
+		    	width: 1500px;
+		    	background-color:#111111 ;
+		    	position: absolute;
+		    	z-index: 5;
+		    	margin-top: 1868px;
+		    	margin-left: 93px;
+		    	
+		    } 
+		    #dibu .d1{
+		    	width:120px;
+		    	height: 100px;
+		    	line-height: 100px;
+		    	float: left;
+		    	margin-left: 10px;
+		    }
+		    #dibu .d1 #t11{
+		    	height: 30px;
+		    	width: 30px;
+		    	background: url(img/icon-share.png);
+		    	float: left;
+		    	margin-top: 35px;
+		    	
+		    }
+		    #dibu #b1  a:hover #z1{
+		    	color: red;
+		    }
+		    #dibu .d1:hover #t11{
+		    	background-position-y:-50px;
+		    	}
+		    #dibu .d1:hover #t12{
+		    	background-position-y:-150px;
+		    	}
+		    #dibu .d1:hover #t13{
+		    	background-position-y:-250px;
+		    	}
+		    #dibu .d1 #t12{
+		    	height: 30px;
+		    	width: 30px;
+		    	float: left;
+		    	margin-top: 35px;
+		    	background: url(img/icon-share.png);
+		    	background-position-y:-100px;
+		    }
+		    #dibu .d1 #t13{
+		    	height: 30px;
+		    	width: 30px;
+		    	background: url(img/icon-share.png);
+		    	float: left;
+		    	margin-top: 35px;
+		    	background-position-y:-200px;
+		    }
+		    #dibu .d1 #z1{
+		    	height: 100px;
+		    	width: 120px;
+		    	color: #999999;
+		    }
+		    #dibu #b1{
+		    	height: 100px;
+		    	width: 450px;
+		    	float: left;
+		    	margin-left: 80px;
+		    }
+		    #dibu #b2{
+		    	height: 100px;
+		    	width: 440px;
+		    	float: left;
+		    }
+		    #dibu .d1 #t21{
+		    	height: 30px;
+		    	width: 30px;
+		    	background: url(img/icon-share.png);
+		    	float: left;
+		    	margin-top: 35px;
+		    	background-position-y:-300px;
+		    }#dibu .d1 #t22{
+		    	height: 30px;
+		    	width: 30px;
+		    	background: url(img/icon-share.png);
+		    	float: left;
+		    	margin-top: 35px;
+		    	background-position-y:-400px;
+		    }
+		    #dibu .d1 #t23{
+		    	height: 30px;
+		    	width: 30px;
+		    	background: url(img/icon-share.png);
+		    	float: left;
+		    	margin-top: 35px;
+		    	background-position-y:-500px;
+		    }
+		  #wx111 #weixin{
+		  	margin-left: -130px;
+		  	margin-top: 1709px;
+		 
+		  	position: absolute;
+				z-index: 4;
+		  }
+		   
+		    #dibu .d1:hover #t21{
+		    	background-position-y:-350px;
+		    	}
+		    #dibu .d1:hover #t22{
+		    	background-position-y:-450px;
+		    	}
+		    #dibu .d1:hover #t23{
+		    	background-position-y:-550px;
+		    	}
+		    #dibu #b2  a:hover #z1{
+		    	color: red;
+		    }
+		    #dibu #b2  a:hover #z2{
+		    	color: green;
+		    }
+		    
+		    #dibu #b2  a:hover #z3{
+		    	color: deepskyblue;
+		    } 
+		    #dibu #b2 #z2{
+		    	color: #999999
+		    }
+		    #dibu #b2 #z3{
+		    	color: #999999
+		    }
+		    #dibu #b3{
+		    	height: 100px;
+		    	width: 300px;
+		    	float: left;		    	
+		    	text-align: center;
+		    }
+		   
+		    #dibu #b3 a{
+		    	text-decoration: none;
+		       color: #999999;
+		       font-size: 30px;
+		    }
+		    #dibu #b3 a:hover{
+		    	color: red;}
+		    #dibu #b3 #wanmei{
+		    	height: 45px;
+		    	width: 255px;
+		    	background: url(img/app-download.png) no-repeat;
+		    	margin-top: 25px;
+		    }
+		    #dibu #b3 #wanmei:hover{
+		    	background-position-y:-62px;
+		    }
+			
+			
+			/*底下*/
+			#di{
+				width: 1600px;
+				height: 160px;
+				margin-top: 1970px;
+				background-color: black;
+				float: left;
+				position: absolute;
+				z-index: 4;
+			}
+			#di h5 {
+				font-size: 12px;
+				color: #909090;
+				margin-left: 647px;
+				margin-top: 30px;
+			}
+			#di h4 {
+				color: #312E27;
+				font-size: 12px;
+				margin-top: 3px;
+				margin-left: 388px;
+			}
+		#wanmeishijie{
+			margin-left: 350px;
+			margin-top: -90px;
+			padding-left: 30px;
+		}
+		#denglu{
+			width: 300px;
+			height: 40px;
+			color: white;
+			margin-left: 1200px;
+			margin-top: 30px;
+			position: absolute;
+			z-index: 4;
+			
+			
+		}
+		#denglu a{
+			color: white;
+		}
+		#denglu a:hover{
+			color: darkturquoise;
+		}
+		#jietu{
+			margin-left: 105px;
+			margin-top: 3px;
+		}
+		#denglu h6{
+			
+			margin-left: 145px;
+			margin-top: -30px;
+		}
+		#wanmeidenglu{
+			width: 450px;
+			height:566px;
+			background: url(img/bg-login.jpg);
+			position: absolute;
+			z-index: 6;
+			margin-left: 560px;
+			margin-top: 150px;
+			
+		}
+		 #zhanghao{
+		 	background-color:#0B0B0B;
+		 	color: #A9A9A9;
+		 	font-size: 18px;
+			width: 350px;
+			height: 35px;
+			margin-left: 50px;
+			margin-top: 210px;
+		}
+		#zhanghao a:hover{
+			border: solid white ;
+		}
+		#mima{
+			background-color: #0B0B0B;
+			color: #A9A9A9;
+			font-size: 18px;
+			width: 350px;
+			height: 35px;
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+		#ma{
+			background-color: #0B0B0B;
+			color: #A9A9A9;
+			font-size: 15px;
+			width: 170px;
+			height: 32px;
+			margin-left: 50px;
+			margin-top: 10px;
+		}
+		#zh{
+			margin-left: 60px;
+			margin-top: 220px;
+			position: absolute;
+			z-index: 7;
+		}
+		#mm{
+			margin-left: 62px;
+			margin-top: 270px;
+			position: absolute;
+			z-index: 7;
+		}
+		#yanzhengma{
+			background-color: #0B0B0B;
+			width: 80px;
+			height: 31px;
+			margin-top: 1px;
+			font-size: 25px;
+			color: white;
+			text-align: center;
+		}
+		#wanmeidenglu .huan{
+			font-size: 11px;
+			margin-top: -20px;
+			margin-left: 321px;
+			color:#999999;}
+			#wanmeidenglu a{
+				color: #973021;
+			}
+			#gou1{
+				margin-left: 50px;
+				margin-top: 15px;
+			}
+			
+			#deng{
+				font-size: 20px;
+				font-family: "微软雅黑";
+				font-weight: bold;
+				color: white;
+				width: 350px;
+				height: 40px;
+				background-color: #7A3127;
+				margin-left: 52px;
+				
+				
+			}
+			#deng:hover{
+				background-color:#AA3323 ;
+			}
+			#shengdun{
+				
+				font-size: 20px;
+				font-family: "微软雅黑";
+				
+				color: white;
+				width: 350px;
+				height: 40px;
+				background-color: #0B0B0B;
+				margin-left: 52px;
+				margin-top: 7px;
+				border: solid #7A3127 1px;
+			}
+			#shengdun:hover{
+				border: solid #DC3D20 1px;
+			}
+			#wanmeidenglu p{
+				padding: 6px;
+				margin-top: 5px;
+				font-size: 10px;
+				text-align: center;
+				color: #C42F1B;
+			}
+			#zhuce:hover{
+				color:#DC2108 ;
+			}
+			#zhaohui:hover{
+				color: #DC2108;
+			}
+			#x{
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				z-index: 8;
+				margin-left: 430px;
+			}
+			
+		
+		</style>
+	</head>
+
+	<body>
+		<div id="dota">
+			
+		<div id="tou">
+		
+			<img class="tou1" src="img/QQ图片20170328100458.png" />
+			<div id="zi">
+				<ul>
+					<li class="zi1"><a href="http://www.dota2.com.cn/main.htm">DOTA2官网<p>HOME</p></a></li>
+					<li class="zi1"><a href="http://www.dota2.com.cn/zlz/index.htm">资料站<p>DOTA</p></a></li>
+					<li class="zi1"><a href="http://i.youku.com/i/UNTk5NTIzNTMy">视频站<p>VIDEO</p></a></li>
+					<li class="zi1"><a href="http://fx.wanmei.com/dota2/zb">玩家工坊<p>WORKSHOP</p></a></li>
+					<li class="zi1"><a href="http://kf.dota2.com.cn/">客服中心<p>SERVICE</p></a></li>
+				</ul>
+			</div>
+			<div id="jxzy">
+        	
+        	<div id="zuo">
+        		<a href="http://www.dota2.com.cn/bladeformlegacy/"><img class="jx1" src="img/bg_05.png"/></a>
+        		
+        	</div>
+        	<div id="zuo1">
+        		
+        	</div>
+        
+            </div>
+			
+		</div>
+		<div id="guanwang">
+			<ul>
+				<li class="guanwang"><a href="http://www.dota2.com.cn/main.htm">进入官网</a></li>
+				<li class="guanwang"><a href="http://www.dota2.com.cn/download/">游戏下载</a></li>
+				<li class="guanwang"><a href="http://passport.wanmei.com/reg/?s=dota2">用户注册</a></li>
+			</ul>
+		</div>
+		<div id="you">
+
+        		<video  src="11.mp4"; autoplay="autoplay"; loop="loop"; style="width: 950px;height: 1300px;"></video>
+        	</div>
+		
+		<div id="dac">
+		     <div class="dac1">
+		     	<a href="http://www.dota2.com.cn/dac/chinese/index"><h4 class="z1">第二届DOTA2亚洲邀请赛</h4>
+		     <img class="hy1" src="img/04.jpg"/><img class="hy2" src="img/cover161129_bg_112.jpg"/></a>
+		     </div>
+		     <div class="dac1">
+		     	<a href="http://act.dota2.com.cn/dac2017/index"><h4 class="z1">DAC互动指南&nbsp;正式上线</h4>
+		     	<img class="hy1" src="img/02.jpg"/><img class="hy2" src="img/cover161129_bg_501.jpg"/></a>
+		     </div>
+		     <div class="dac1">
+		     	<a href="http://www.dota2.com.cn/secretshop/2017dac/index.html"><h4 class="z1">DAC周边产品限时抢购</h4>
+		     	<img class="hy1" src="img/05.jpg"/><img class="hy2" src="img/cover161129_bg_601.png"/></a>
+		     </div>
+		</div>
+		<div id="juntuan">
+		     
+		     <div id="j1">
+		     	<a href="http://www.dota2.com.cn/newcomer/"><img  src="img/cover170320_bg_15.png"/></a>
+		     </div>
+		     <div id="bingnv">
+		     	<img id="bn" src="img/cover161129_bg_08.png"/>
+		     </div>
+		     <div id="juntuan1">
+		     	<img id="jt" src="img/cover161129_bg_09.png"/>
+		     </div>
+		     <div id="j2">
+		     	<a href="http://www.dota2.com.cn/returnguide/"><img src="img/cover170320_bg_17.png"/></a>
+		     </div>
+		     <script type="text/javascript">
+		     	var lan = document.getElementById("j1");
+		     	var huang = document.getElementById("j2");
+		     	var bin = document.getElementById("bingnv");
+		     	var jun = document.getElementById("juntuan1");
+		     	
+		     	
+		     	lan.onmouseover=function(){
+				bin.style.display="block";
+				jun.style.display="none";
+			    }
+                 huang.onmouseover=function(){
+			     bin.style.display="none";
+			     jun.style.display="block";
+			     }
+
+		     	
+		     </script>
+		     </div>
+		     <div id="dibu">
+		     	
+	   	<div id="b1">
+	   	<a href="http://cs.wanmei.com/genius?imCode=imdotagames">
+	   	<div class="d1">
+	   		<div id="t11">
+	   			
+	   		</div>
+	   		<div id="z1">
+	   			在线客服
+	   		</div>
+	   	</div></a>
+	   	<a href="http://kf.dota2.com.cn/">
+	   		
+	   	<div class="d1">
+	   		<div id="t12">
+	   			
+	   		</div>
+	   		<div id="z1">
+	   			问题反馈
+	   		</div>
+	   	</div></a>
+	   	<a href="http://members.dota2.com.cn/findPwAccount">
+	   	<div class="d1">
+	   		<div id="t13">
+	   			
+	   		</div>
+	   		<div id="z1">
+	   			通行证查询
+	   		</div>
+	   	</div></a>
+	   		   			
+	   		</div>
+	   <div id="b2">
+	   	<a href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Fdota2comcn&domain=.weibo.com&sudaref=http%3A%2F%2Fwww.dota2.com.cn%2Findex.htm&ua=php-sso_sdk_client-0.6.23&_rand=1490759039.1455">
+	   	<div class="d1">
+	   		<div id="t21">
+	   			
+	   		</div>
+	   		<div id="z1">
+	   			微博
+	   		</div>
+	   	</div></a>
+	   	<a href=""><div class="d1"><div id="t22"></div><div id="z2">微信
+	   	</div>
+	   	</div></a>
+	   	<a href="http://bbs.dota2.com.cn/forum.php">
+	   	<div class="d1">
+	   		<div id="t23">
+	   			
+	   		</div>
+	   		<div id="z3">
+	   			论坛
+	   		</div>
+	   	</div></a>
+	   		   			
+	   		</div>
+	   <div id="b3">
+	       <a href="http://app.dota2.com.cn/web.html"><div id="wanmei">
+	       </div></a>
+	   </div>		
+	   </div>
+	   
+	   <div id="wx111">
+		   	<img id="weixin" src="img/wechat.png"/>
+		   </div>  
+		  <script type="text/javascript">
+		   	var w = document.getElementById("z2");
+		   	var wx = document.getElementById("wx111");
+		   	
+		   	wx.style.display ="none";
+		   	
+		   w.onmouseover=function(){
+				wx.style.display="block";
+           }
+			w.onmouseout = function(){
+				wx.style.display = "none";
+			}
+	   </script> 
+
+		 <!--dibu--> 
+		<div id="di">
+			<h5>完美世界（北京）网络技术有限公司 版权所有 Copyright © 2012-2017 Perfect World Co., Ltd. All Rights reserved<br />
+			©2012 Valve Corporation. All Rights reserved. Licensed to Perfect World Co., Ltd. in China</h5><br />
+			<h4>京ICP证：050016号《网络文化经营许可证》编号：京网文[2011]0782-287号 《网络视听许可证》编号：0110587<br />
+			京公网安备110105019888号 文网进字[2013] 028号 新出审字[2013] 1505号 ISBN：978-7-89989-826-0</h4>
+			<!--<a href=""><img class="wammei" src="img/logo-wanmei.png"/></a>
+			<a href=""><img class="wanmei1" src="img/logo-valve.png" </a>-->
+			<div id="wanmeishijie">
+				<a href="http://www.wanmei.com/"><img src="img/logo-wanmei.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+				<a href="http://www.valvesoftware.com/"><img src="img/logo-valve.png"/></a>
+			</div>
+			
+		</div>
+        <div id="denglu">
+        	<img id="jietu" src="img/5555.png"/>
+        	<h6>您好，请&nbsp;<a href="#" onclick="kai()">登录</a></h6>
+        </div>
+        
+        <div id="wanmeidenglu">
+        	<input type="button" onclick="guan()" id="x" value="X" />
+        	<img id="zh" src="img/123333.png"/>
+        	<img id="mm" src="img/1222.png"/>
+        	<input type="text"  id="zhanghao"  value="          电子邮件地址/手机号" /><br />
+        	<input type="text"  id="mima" value="          请输入您的密码" /><br />
+        	<input type="text"  id="ma" value="请输入验证码" />
+        	<input type="text"  id="yanzhengma" value="" /><h4 class="huan">看不清&nbsp;<a href="#" onclick="suiji()">换一张</a></h4>
+        	
+        	<script type="text/javascript">
+        		var sj = document.getElementById("yanzhengma");
+        		function suiji(){
+        			sj.value = Math.random()*5000+1000;
+        			yanzhengma.value = Math.floor(sj.value);
+        		}
+        	</script>
+        	
+        	<img id="gou1" src="img/2.png"/>
+        	
+        	<a href=""><input type="button"  id="deng" value="登                       录" /></a>
+        	<a href=""><input type="button"  id="shengdun" value="完美神盾登录" /></a>
+        	<a href="http://passport.wanmei.com/reg/?s=dota2"><p id="zhuce">免费注册完美通行证帐号</p></a>
+        	<a href="http://members.dota2.com.cn/findPwAccount"><p id="zhaohui">使用DOTA2账号找回完美通行证</p></a>
+        </div>
+        <script type="text/javascript">
+        	
+        	var lihai = document.getElementById("wanmeidenglu");
+        	var x = document.getElementById("x");
+        	lihai.style.display = "none";
+        	
+        	
+        	function guan (){
+        		lihai.style.display = "none";
+        	}
+        	function kai () {
+        		suiji();
+        		lihai.style.display = "block";
+        	}
+        </script>
+        
+        
+	</body>
+
+</html>

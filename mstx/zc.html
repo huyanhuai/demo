@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>客户端</title>
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+
+			}
+			.bt{
+				width: 100%;
+				background-color: #333333;
+				position: fixed;
+				top:0;
+				left: 0;
+				z-index: 10000;
+			}
+			#top {
+				width: 1090px;
+				height: 50px;
+				/*background-color: #333333;*/
+				margin:auto;
+			}
+			
+			#zuo {
+				width: 570px;
+				height: 50px;
+				float: left;
+			}
+			
+			#you {
+				width: 330px;
+				height: 50px;
+				float: right;
+				/*position: absolute;*/
+				/*top: 0;*/
+				/*left: 1108px;*/
+				
+			}
+			
+			.meun1 {
+				list-style: none;
+				width: 45px;
+				height: 50px;
+				font-size: 14px;
+				float: left;
+				text-align: center;
+				line-height: 50px;
+				background-color: #333333;
+			}
+			.meun1:nth-child(1){
+				width: 60px;
+			}
+			#zuo a{
+				color:white;
+			}
+		
+			img {
+				width: 20px;
+				height: 20px;
+			}
+			
+			#zuo .meun1:hover {
+				background-color: black;
+			}
+			
+			.menu2 {
+				display: none;
+				width: 60px;
+				height: 120px;
+				line-height: 40px;
+				list-style: none;
+				float: left;
+				text-align: center;
+				
+				
+			}
+			
+			.menu2 a {
+				font-size: 14px;
+				color: #CCCCCC;
+			}
+			
+			#zuo .xl:hover .menu2 {
+				display: block;
+				background-color:#333333;
+			}
+			
+			.menu3:hover {
+				background-color: black;
+			}
+			
+			.menu2 a:hover {
+				color: white;
+			}
+			
+			.meun4 {
+				list-style: none;
+				width: 60px;
+				height: 50px;
+				font-size: 5px;
+				
+				float: left;
+				text-align: center;
+			}
+			
+			.menu4-1 {
+				display: none;
+				width: 60px;
+				height: 100px;
+			    background-color: #333333;
+				list-style: none;
+				margin-top: 10px;
+				z-index: 1000;
+				}
+			#you .cl:hover .menu4-1{
+				display: block;
+			}
+			.menu4-1 li:hover{background-color: #000000;
+				
+			}
+			.meun4 a {
+				color: white;
+			}
+			.meun5{
+				list-style: none;
+				width: 60px;
+				height: 50px;
+				font-size: 5px;
+				
+				float: left;
+				text-align: center;
+				background-color:#59c3d1 ;
+			}
+			.menu5-0{
+				display:none ;
+				width: 60px;
+				height:120px;
+			    background-color:#59c3d1;
+				list-style: none;
+				float: left;
+				text-align: center;
+				line-height:40px ;
+				font-size: 15px;
+				}
+			.menu5-1{
+				background-color:#8ECDD8 ;
+			}
+			.menu5-2{
+				background-color:#A6DFEA;
+			}
+			.menu5-3{
+				background-color:#ADECF8 ;
+			}
+			  #you .cx:hover .menu5-0{
+			 	display: block;
+			 }
+			.meun6 {
+				list-style: none;
+				width: 60px;
+				height: 50px;
+				font-size: 5px;
+				
+				float: left;
+				text-align: center;
+				background-color:#FFA859;
+			}
+			#meun7 {
+				list-style: none;
+				width: 60px;
+				height: 50px;
+				font-size: 5px;
+				
+				float: left;
+				text-align: center;
+				background-color:#FE5761 ;
+			}
+			#you a{
+				color:white;
+			}
+			#datu {
+				width: 1090px;
+				height: 615px;
+				background: url(img/p1_3_1.jpg)no-repeat scroll 96px bottom;
+				margin: 0 auto;
+				border-bottom: 2px solid #d8d8d8;
+			}
+			
+			#datu #saoma {
+				width: 400px;
+				height: 400px;
+				position: absolute;
+				left: 870px;
+				top: 170px;
+			}
+			
+			#saoma #meishi {
+				width: 400px;
+				height: 200px;
+				text-align: center;
+			}
+			
+			#meishi img {
+				width: 90px;
+				height: 90px;
+			}
+			#p1:hover{
+				transform: scale(1.2,1.2);
+			}
+			#p2:hover{
+				transform: scale(1.2,1.2);
+			}
+			#p3:hover{
+				transform: scale(1.2,1.2);
+			}
+			#meishi {
+				font-size: 30px;
+			}
+			
+			#meishi p {
+				color: #999999;
+			}
+			
+			#saoma2-1 {
+				width: 200px;
+				height: 200px;
+				text-align: center;
+			}
+			
+			#saoma2-1 img {
+				width: 160px;
+				height: 160px;
+			}
+			
+			#saoma2-2 {
+				width: 200px;
+				height: 50px;
+				background-color: #E8E8E8;
+				position: absolute;
+				left: 200px;
+				top: 225px;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 3px;
+			}
+			
+			#saoma2-2:hover {
+				cursor: pointer;
+			}
+			
+			#saoma2-2 #xiaotu1 {
+				position: absolute;
+				left: 17px;
+				top: 16px;
+			}
+			
+			#saoma2-3 #xiaotu2 {
+				position: absolute;
+				left: 17px;
+				top: 16px;
+			}
+			
+			#saoma2-3 {
+				width: 200px;
+				height: 50px;
+				background-color: #E8E8E8;
+				position: absolute;
+				left: 200px;
+				top: 300px;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 3px;
+			}
+			
+			#saoma2-3:hover {
+				cursor: pointer;
+			}
+			
+			#meishi2 {
+				width: 1090px;
+				height: 243px;
+				margin: 80px auto 60px;
+			}
+			
+			#meishi2 span {
+				font-size: 28px;
+				color: #5f5f5f;
+			}
+			
+			#meishi2 p {
+				font-size: 22px;
+				color: #999;
+				text-align: center;
+			}
+			
+			#meishi2 #t1 {
+				width: 307px;
+				height: 243px;
+				float: left;
+			}
+			
+			#t1-1 {
+				width: 307px;
+				height: 60px;
+				font-size: 30px;
+				text-align: center;
+				position: relative;
+				line-height: 60px;
+			}
+			
+			#t1-1 img {
+				width: 35px;
+				height: 35px;
+			}
+			
+			#t1-1 span {
+				margin-left: 18px;
+			}
+			
+			#t1-2 img {
+				width: 150px;
+				height: 150px;
+				margin-left: 80px;
+
+
+			}
+			#t1-2{
+				margin:auto;
+			}
+
+			#t1-3 {
+				width: 150px;
+				height: 50px;
+				background-color: #E8E8E8;
+				position: absolute;
+				left: 150px;
+				top: 100px;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 3px;
+				font-size: 10px;
+			}
+			
+			#t1-3:hover {
+				cursor: pointer;
+			}
+			
+			#t1-3 #xiaotu3 {
+				position: absolute;
+				left: 17px;
+				top: 16px;
+			}
+			
+			#t1-4 #xiaotu4 {
+				position: absolute;
+				left: 17px;
+				top: 16px;
+			}
+			
+			#t1-4 {
+				width: 150px;
+				height: 50px;
+				background-color: #E8E8E8;
+				position: absolute;
+				left: 403px;
+				top: 920px;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 3px;
+				font-size: 10px;
+			}
+			
+			#t1-3:hover {
+				cursor: pointer;
+			}
+			
+			#t2 {
+				width: 410px;
+				height: 243px;
+				margin-left: 10px;
+				border-left: 1px solid #D8D8D8;
+				border-right: 1px solid #D8D8D8;
+				text-align: center;
+				float: left;
+			}
+			
+			#t2 img {
+				width: 160px;
+				height: 160px;
+			}
+			
+			#t3 {
+				width: 355px;
+				height: 243px;
+				text-align: center;
+				float: left;
+			}
+			
+			#t3 img {
+				width: 160px;
+				height: 160px;
+			}
+			
+			#dibu {
+				width: 1090px;
+				height: 60px;
+				font-size: 12px;
+				border-top: 1px solid #D8D8D8;
+				margin: 0 auto;
+			}
+			
+			#dibu #d1 {
+				width: 1090px;
+				height: 20px;
+			}
+			
+			#dibu a {
+				color: #666674;
+			}
+			
+			#dibu a:hover {
+				color: red;
+				text-decoration: underline;
+			}
+			
+			#d2 {
+				width: 1090px;
+				height: 23px;
+				color: #666674;
+			}
+			
+			.d2-1 {
+				width: 64px;
+				height: 23px;
+				line-height: 23px;
+				float: left;
+			}
+			
+			.d2-1-1 {
+				width: 40px;
+				height: 23px;
+				line-height: 23px;
+				float: left;
+			}
+			
+			.t3 {
+				color: #666674;
+			}
+			#tupian img{
+			  width: 480px;
+			  height: 150px;
+			z-index: -1;
+			  position: absolute;
+			  left: 750px;
+			  top: 50px;
+			  animation:zou 3s;
+			  }
+			  @keyframes zou{
+			  	from{left: 0;width:50px;height:50px ;}
+			  	to{left: 750px; width: 480px;
+			  height: 150px;}
+			  }
+			#tupian	img{
+				width: 480px;
+				height: 150px;
+			}
+		
+		</style>
+
+	</head>
+
+	<body>
+	<div class="bt">
+		<div id="top">
+			<div id="zuo">
+
+				<ul>
+					<li class="meun1"><a href="#">美食天下</a></li>
+
+					<li class="meun1"><a href="index.html">首页</a></li>
+
+					<li class="meun1"><a href="#">菜谱</a></li>
+
+					<li class="meun1"><a href="#">食材</a></li>
+
+					<li class="meun1"><a href="#">珍选</a>
+					</li>
+
+					<li class="meun1"><a href="#">健康</a>
+					</li>
+
+					<li class="meun1"><a href="#">专题</a>
+					</li>
+
+					<li class="meun1"><a href="#">社区</a>
+					</li>
+
+					<li class="meun1"><a href="#">话题</a>
+					</li>
+
+					<li class="meun1"><a href="#">搜索</a>
+					</li>
+
+					<li class="meun1 xl"><a href="#">▼
+						<ul class="menu2">
+							<li class="menu3"><a href="#">烘培</a></li>
+							<li class="menu3"><a href="#">妈妈派</a></li>
+							<li class="menu3"><a href="#">活动</a></li>
+						</ul>
+
+					</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div id="you">
+
+				<a href="dl.html">
+					<li class="meun1">注册</a>
+				</li>
+				<a href="dl.html">
+					<li class="meun1">登陆</a>
+				</li>
+
+
+				<li class="meun4 cl"><a href=""><img  src="img/nir1.png" /><br />QQ登陆
+					<ul class="menu4-1">
+						<li><a href="#"><img src="img/nir2.png"/><br />微博登陆</a></li><br />
+						<li><a href="#"><img src="img/nir3.png"/><br />微信登陆</a></li>
+					</ul>
+				</a>
+				</li>
+
+				<li class="meun5 cx"><a href=""><img src="img/nr1.png" /><br />发布
+					<ul class="menu5-0">
+						<li class="menu5-1">发菜谱</li>
+						<li class="menu5-2">发话题</li>
+						<li class="menu5-3">发日志</li>
+					</ul>
+
+				</a>
+				</li>
+
+				<li class="meun6"><a href=""><img src="img/nr2.png" /><br />签到有礼</a>
+				</li>
+
+				<li id="meun7"><a href=""><img src="img/nr3.png" /><br />客户端</a>
+				</li>
+
+			</div>
+		</div>
+	</div>
+
+		<div id="sanjiao2">
+
+		</div>
+
+		<div id="datu">
+			<div id="saoma">
+				<div id="meishi">
+					
+					<img  src="img/icon.jpg" /><br /><br />
+					<p>惊艳大图 每日新鲜 达人力荐</p>
+				</div>
+				<div id="sama2">
+					<div id="saoma2-1">
+						<img src="img/msc_app (1).png" />
+					</div>
+					<div id="saoma2-2">
+						<img id="xiaotu1" src="img/QQ图片20170328171920.jpg" />下载iPhone版
+					</div>
+					<div id="saoma2-3">
+						<img id="xiaotu2" src="img/QQ图片20170328171915.jpg" />下载Android版
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="meishi2">
+			<div id="t1">
+
+				<div id="t1-1"><img id="1" src="img/p3.jpg" /><span>菜谱精灵</span></div>
+				<p>65万菜谱&nbsp;&nbsp;一个APP搞定</p>
+				<div id="t1-2">
+					<img id="p1" src="img/msc_app (1).png" />
+				</div>
+
+
+
+			</div>
+			<div id="t2">
+				<span>微信公众号</span><br />
+				<p>使用微信“扫一扫”下方二维码</p><br /><img id="p2" src="img/weixin.jpg" />
+
+			</div>
+			<div id="t3">
+				<span>WAP手机版</span><br />
+				<p>直接访问&nbsp;zil.cn </p><br /><img id="p3" src="img/wap.jpg" />
+			</div>
+
+		</div>
+		<div id="dibu">
+			<div id="d1">
+				<a href="#">美食天下 - 让吃更美好！</a>
+			</div>
+
+			<div id="d2">
+				<ul>
+					<a href="">
+						<li class="d2-1-1" style="list-style: none;">菜谱</a>
+					</li>
+					<a href="">
+						<li class="d2-1-1">食材</a>
+					</li>
+					<a href="">
+						<li class="d2-1-1">魔方</a>
+					</li>
+					<a href="">
+						<li class="d2-1">关于我们</a>
+					</li>
+					<a href="">
+						<li class="d2-1">联系我们</a>
+					</li>
+					<a href="">
+						<li class="d2-1">加入我们</a>
+					</li>
+					<a href="">
+						<li class="d2-1">服务声明</a>
+					</li>
+					<a href="">
+						<li class="d2-1">友情链接</a>
+					</li>
+					<a href="">
+						<li class="d2-1">网站地图</a>
+					</li>
+					<a href="">
+						<li class="d2-1">移动应用</a>
+					</li>
+				</ul>
+			</div>
+			<p class="t3">© 2004-2017 meishichina.com, all rights reserved</p>
+		</div>
+		<div id="tupian">
+			<img src="img/tu.jpg"/>
+		</div>
+	</body>
+
+</html>
